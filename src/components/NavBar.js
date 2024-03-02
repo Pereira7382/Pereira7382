@@ -13,7 +13,6 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import { FaUserAlt, FaTools, FaBriefcase, FaGraduationCap, FaInfoCircle, FaMedal, FaFileAlt } from 'react-icons/fa'; // Importa los iconos necesarios
 import '../css/Menu.css'
 import '../css/Navbar.css'
 
