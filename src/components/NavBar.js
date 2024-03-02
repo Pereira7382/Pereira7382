@@ -123,46 +123,54 @@ export function NavBar() {
 
                     <div>
                         <Button color="inherit" onClick={handleContactClick}>
-                            <img src="/iconos/comunicar(1).png" alt="Contacto" style={{ width: '45px', height: 'auto' }} />
+                            <img src="/iconos/contacto.png" alt="Contacto" style={{ width: '45px', height: 'auto' }} />
                         </Button>
                     </div>
                 </Toolbar>
             </AppBar>
             <Menu
-                id="menu"
-                anchorEl={anchorEl}
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-            >
-                <MenuItem component="a" href="#perfil-profesional" onClick={handleMenuItemClick}>
-                    <FaUserAlt style={{ marginRight: '10px', color: '#FFD700' }} />
-                    Perfil Profesional
-                </MenuItem>
-                <MenuItem component="a" href="#habilidades-profesionales" onClick={handleMenuItemClick}>
-                    <FaTools style={{ marginRight: '10px', color: '#FF6347' }} />
-                    Habilidades Profesionales
-                </MenuItem>
-                <MenuItem component="a" href="#experiencia-profesional" onClick={handleMenuItemClick}>
-                    <FaBriefcase style={{ marginRight: '10px', color: '#7FFFD4' }} />
-                    Experiencia Profesional
-                </MenuItem>
-                <MenuItem component="a" href="#educacion" onClick={handleMenuItemClick}>
-                    <FaGraduationCap style={{ marginRight: '10px', color: '#9370DB' }} />
-                    Educación
-                </MenuItem>
-                <MenuItem component="a" href="#informacion-adicional" onClick={handleMenuItemClick}>
-                    <FaInfoCircle style={{ marginRight: '10px', color: '#FFA500' }} />
-                    Información adicional
-                </MenuItem>
-                <MenuItem component="a" href="#logros-y-competencias" onClick={handleMenuItemClick}>
-                    <FaMedal style={{ marginRight: '10px', color: '#FF69B4' }} />
-                    Logros y competencias
-                </MenuItem>
-                <MenuItem onClick={handleDownloadConfirmationOpen}>
-                    <FaFileAlt style={{ marginRight: '10px', color: '#32CD32' }} />
-                    Documentos de respaldo
-                </MenuItem>
-            </Menu>
+    id="menu"
+    anchorEl={anchorEl}
+    open={Boolean(anchorEl)}
+    onClose={handleClose}
+>
+    <MenuItem component="a" href="#perfil-profesional" onClick={handleMenuItemClick}>
+        {/* Agrega el icono desde tu carpeta de iconos */}
+        <img src="iconos/ingenieros.png" alt="Icono 1" style={{ marginRight: '10px', width: '20px', height: '20px', color: '#FFD700' }} />
+        Perfil Profesional
+    </MenuItem>
+    <MenuItem component="a" href="#habilidades-profesionales" onClick={handleMenuItemClick}>
+        {/* Agrega el icono desde tu carpeta de iconos */}
+        <img src="iconos/experiencia.png" alt="Icono 2" style={{ marginRight: '10px', width: '20px', height: '20px', color: '#FF6347' }} />
+        Habilidades Profesionales
+    </MenuItem>
+    <MenuItem component="a" href="#experiencia-profesional" onClick={handleMenuItemClick}>
+        {/* Agrega el icono desde tu carpeta de iconos */}
+        <img src="iconos/carrera-profesional.png" alt="Icono 3" style={{ marginRight: '10px', width: '20px', height: '20px', color: '#7FFFD4' }} />
+        Experiencia Profesional
+    </MenuItem>
+    <MenuItem component="a" href="#educacion" onClick={handleMenuItemClick}>
+        {/* Agrega el icono desde tu carpeta de iconos */}
+        <img src="iconos/educacion.png" alt="Icono 4" style={{ marginRight: '10px', width: '20px', height: '20px', color: '#9370DB' }} />
+        Educación
+    </MenuItem>
+    <MenuItem component="a" href="#informacion-adicional" onClick={handleMenuItemClick}>
+        {/* Agrega el icono desde tu carpeta de iconos */}
+        <img src="iconos/informacion.png" alt="Icono 5" style={{ marginRight: '10px', width: '20px', height: '20px', color: '#FFA500' }} />
+        Información adicional
+    </MenuItem>
+    <MenuItem component="a" href="#logros-y-competencias" onClick={handleMenuItemClick}>
+        {/* Agrega el icono desde tu carpeta de iconos */}
+        <img src="iconos/trofeo.png" alt="Icono 6" style={{ marginRight: '10px', width: '20px', height: '20px', color: '#FF69B4' }} />
+        Logros y competencias
+    </MenuItem>
+    <MenuItem onClick={handleDownloadConfirmationOpen}>
+        {/* Agrega el icono desde tu carpeta de iconos */}
+        <img src="iconos/curriculum.png" alt="Icono 7" style={{ marginRight: '10px', width: '20px', height: '20px', color: '#32CD32' }} />
+        Documentos de cv
+    </MenuItem>
+</Menu>
+
 
 
             {/* Diálogo de confirmación de descarga */}
