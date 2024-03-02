@@ -1,0 +1,6 @@
+/* MyCarousel.css */
+.slick-slide img {
+    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener las proporciones */
+  }
+  

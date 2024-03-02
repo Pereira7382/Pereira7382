@@ -1,0 +1,5 @@
+export *from './NavBar'
+export *from './Cuerpo'
+export *from './ContactModal'
+export *from './MyCarousel'
+export *from './Footer'

@@ -1,0 +1,9 @@
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(6, 96, 152, 0.8); /* Color de fondo semi-opaco */
+    z-index: 1000; /* Asegura que el navbar esté por encima del contenido */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de opacidad */
+}

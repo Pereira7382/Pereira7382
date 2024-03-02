@@ -1,0 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-transition {
+    transition: transform 0.5s ease-in-out;
+}
