@@ -52,18 +52,12 @@ const MyCarousel = () => {
         <Slider {...settings}>
           <div>
             <img src="/imagenes/Foto1.jpg" alt="First slide" />
-            <h3></h3>
-            <p></p>
           </div>
           <div>
-            <img src="/imagenes/Foto2.jpg" alt="Second slide" />
-            <h3></h3>
-            <p></p>
+            <img src="/imagenes/Foto2.jpg" alt="Second slide" />  
           </div>
           <div>
-            <img src="/imagenes/Foto3.jpg" alt="Third slide" />
-            <h3></h3>
-            <p></p>
+            <img src="/imagenes/Foto3.jpg" alt="Third slide" />           
           </div>
         </Slider>
       </div>
