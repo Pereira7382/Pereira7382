@@ -12,9 +12,11 @@ const ExperienciaProfesional = () => {
                     <Grid item xs={12} id="experiencia-profesional">
                         <Divider />
 
-                        <Typography gutterBottom style={{ marginTop: '20px' }}>
-                            Experiencia Profesional
-                        </Typography>
+                        <Typography variant="h6" style={{ marginTop: '20px', color: '#333', fontFamily: 'Impact, sans-serif' }}>
+    Experiencia Profesional
+</Typography>
+
+
 
                     </Grid>
 

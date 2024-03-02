@@ -7,9 +7,10 @@ const Educacion = () => {
         <Grid item xs={12} md={6} id="educacion">
             {/* Cuadro de Educación */}
             <Divider />
-            <Typography variant="h5" gutterBottom style={{ marginTop: '20px' }}>
+            <Typography variant="h5" gutterBottom style={{ marginTop: '20px', color: '#333', fontFamily: 'Impact, sans-serif' }}>
                 Educación
             </Typography>
+
             <div style={{ marginBottom: '20px' }}>
                 <Typography variant="body1" gutterBottom>
                     <img src="/iconos/fide.png" alt="Universidad" style={{ width: '20px', marginRight: '5px' }} />

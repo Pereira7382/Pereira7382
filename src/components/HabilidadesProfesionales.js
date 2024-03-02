@@ -5,7 +5,7 @@ const HabilidadesProfesionales = () => {
     return (
         <Grid item xs={12} md={6} id="habilidades-profesionales" >
                     <Typography variant='body1' style={{ textAlign: 'left', maxWidth: '600px', fontFamily: 'Roboto, sans-serif' }}>
-                        <Typography variant="h6" style={{ marginBottom: '20px' }}>
+                        <Typography variant="h6"style={{ marginBottom: '20px', color: '#333', fontFamily: 'Impact, sans-serif' }}>
                             Habilidades Profesionales
                         </Typography>
                         <Grid container spacing={2}>

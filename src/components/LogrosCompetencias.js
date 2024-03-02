@@ -7,10 +7,10 @@ const LogrosCompetencias = () => {
     return (
         <Grid item xs={12} md={6} id="logros-y-competencias" className="scroll-transition">
             <Divider />
-            <Typography variant="h5" gutterBottom style={{ marginTop: '20px' }}>
+            <Typography variant="h5" style={{ marginTop: '20px', color: '#333', fontFamily: 'Impact, sans-serif' }}>
                 Logros y Competencias
             </Typography>
-            <ul style={{ listStyleType: 'none', padding: 0 }}>
+            <ul style={{ listStyleType: 'none', padding: 0,marginTop: '20px' }}>
                 <li style={{ marginBottom: '20px' }}>
                     <Typography variant="body1" gutterBottom>
                         <FaCheckCircle style={{ marginRight: '10px', color: '#4caf50', fontSize: '1.2em' }} /> {/* Icono de verificación */}

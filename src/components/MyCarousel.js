@@ -47,23 +47,23 @@ const MyCarousel = () => {
 
   return (
     <div>
-      <h2>Material visual</h2>
+      <h4 style={{ marginBottom: '20px', color: '#333', fontFamily: 'Impact, sans-serif' }} >Material visual</h4>
       <div style={carouselStyle}>
         <Slider {...settings}>
           <div>
             <img src="/imagenes/Foto1.jpg" alt="First slide" />
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3></h3>
+            <p></p>
           </div>
           <div>
             <img src="/imagenes/Foto2.jpg" alt="Second slide" />
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3></h3>
+            <p></p>
           </div>
           <div>
             <img src="/imagenes/Foto3.jpg" alt="Third slide" />
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h3></h3>
+            <p></p>
           </div>
         </Slider>
       </div>
