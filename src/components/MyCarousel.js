@@ -51,13 +51,25 @@ const MyCarousel = () => {
       <div style={carouselStyle}>
         <Slider {...settings}>
           <div>
-            <img src="/imagenes/Foto1.jpg" alt="First slide" />
+            <img src="/imagenes/imagen1.jpeg" alt="First slide" />
           </div>
           <div>
-            <img src="/imagenes/Foto2.jpg" alt="Second slide" />  
+            <img src="/imagenes/imagen2.jpeg" alt="Second slide" />  
           </div>
           <div>
-            <img src="/imagenes/Foto3.jpg" alt="Third slide" />           
+            <img src="/imagenes/imagen3.jpg" alt="Third slide" />           
+          </div>
+          <div>
+            <img src="/imagenes/imagen4.jpg" alt="Third slide" />           
+          </div>
+          <div>
+            <img src="/imagenes/imagen5.jpg" alt="Third slide" />           
+          </div>
+          <div>
+            <img src="/imagenes/imagen6.jpg" alt="Third slide" />           
+          </div>
+          <div>
+            <img src="/imagenes/imagen7.jpg" alt="Third slide" />           
           </div>
         </Slider>
       </div>

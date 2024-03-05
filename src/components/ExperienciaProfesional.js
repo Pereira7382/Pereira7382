@@ -12,13 +12,13 @@ const ExperienciaProfesional = () => {
                     <Grid item xs={12} id="experiencia-profesional">
                         <Divider />
 
-                        <Typography variant="h6" style={{ marginTop: '20px', color: '#333', fontFamily: 'Impact, sans-serif' }}>
-    Experiencia Profesional
-</Typography>
+                <Typography variant="h6" style={{ marginTop: '20px', color: '#333', fontFamily: 'Impact, sans-serif' }}>
+                    Experiencia Profesional
+                </Typography>
 
 
 
-                    </Grid>
+            </Grid>
 
 
                     {/* Experiencia 1 */}
@@ -32,8 +32,25 @@ const ExperienciaProfesional = () => {
                                     Universidad Central de Costa Rica | Mayo 2023–Actualidad
                                 </Typography>
                                 <Typography>
-                                    - Encargado de impartir clases de cursos de ingeniería.
+                                    <ul>
+                                        <li>
+                                            Encargado de impartir clases de cursos de ingeniería.
+                                        </li>
+                                    </ul>
+                            
                                 </Typography>
+
+                                <Typography gutterBottom style={{ marginTop: '20px' }}>
+                                    Referencia:
+                                </Typography>
+                                <Typography variant="subtitle2" style={{ display: 'flex', alignItems: 'center' }}>
+                                    <span>Rodolfo Cardenas-Director de carrera</span>
+                                </Typography>
+                                <Typography variant="subtitle2" style={{ display: 'flex', alignItems: 'center' }}>
+                                    <img src={"/iconos/whatsapp.png"} alt="Teléfono" style={{ width: '20px', height: '20px', marginRight: '5px' }} />
+                                    <span><a href="https://wa.me/88174060">88174060</a></span>
+                                </Typography>
+
                             </CardContent>
                         </Card>
                     </Grid>
@@ -48,15 +65,17 @@ const ExperienciaProfesional = () => {
                                     Municipalidad de Sarapiquí | Enero 2022 - Marzo 2022
                                 </Typography>
                                 <Typography>
-                                    - Supervisión y inspección de puentes.
-                                </Typography>
-                                <Typography>
-                                    - Redactar informes sobre el estado de los puentes.
-                                </Typography>
-                                <Typography>
-                                    - Recopilar información del avance de las obras para emitir recomendaciones.
-                                </Typography>
 
+                                    <ul>
+                                        <li>
+                                          Supervisión y inspección de puentes.</li>
+                                        <li>Redactar informes sobre el estado de los puentes.</li>     
+                                        <li>Supervisión y inspección de puentes</li>
+                                        <li>Recopilar información del avance de las obras para emitir recomendaciones.</li>
+                                    </ul>
+
+                                </Typography>
+            
                                 <Typography gutterBottom style={{ marginTop: '20px' }}>
                                     Referencia:
                                 </Typography>
@@ -71,7 +90,7 @@ const ExperienciaProfesional = () => {
                                 </Typography>
                                 <Typography variant="subtitle2" style={{ display: 'flex', alignItems: 'center' }}>
                                     <img src={"/iconos/whatsapp.png"} alt="Teléfono" style={{ width: '20px', height: '20px', marginRight: '5px' }} />
-                                    <span><a href="tel:+8889036">8889036</a></span>
+                                    <span><a href="https://wa.me/8889036">8889036</a></span>
                                 </Typography>
 
 
@@ -153,6 +172,52 @@ const ExperienciaProfesional = () => {
                             </CardContent>
                         </Card>
                     </Grid>
+
+                    <Grid item xs={12} md={6}>
+                <Card>
+                    <CardContent>
+                        <Typography variant="h5" gutterBottom>
+                            Asistente de ingeniería
+                        </Typography>
+                        <Typography gutterBottom>
+                            MJ Concretos | Septiembre 2021 - Septiembre 2022
+                        </Typography>
+                        <ul>
+                            <li>Coordinación y negociación con el cliente y ajuste a los requerimientos de este.</li>
+                            <li>Selección y coordinación con subcontratistas en proyecto.</li>
+                            <li>Cumplimiento de fechas establecidas.</li>
+                            <li>Supervisión de personal de campo.</li>
+                            <li>Presupuestos: presupuesto de obra civil menor.</li>
+                            <li>Proveeduría: encargado de cotizaciones y compra de materiales.</li>
+                            <li>Función de intermediario para relaciones comerciales, así como servicio al cliente.</li>
+                            <li>Ampliacion de la ruta nacional 32 Carretera Braulio Carrillo - Seccion rio Madre,Rio Liverpool,
+                             Rio Cuba, Rio escondido, Rio los Gemelos,Rio Toro amarillo- Limon en colocacion de concreto en Bastiones y
+                                pilotes en puentes . entre 60 a 130m3</li>
+                            <li>Colocacion de losa de concreto para bodega de almacenamiento Almacen Colono construccion. 50 m3.</li>
+                            <li>Colocacion de losa de concreto para almacenamiento APM Terminal . 30 m3.</li>
+                            <li>Redacción de informes.</li>
+                        </ul>
+                        <Typography gutterBottom style={{ marginTop: '20px' }}>
+                            Referencia:
+                        </Typography>
+                        <Typography variant="subtitle2" style={{ display: 'flex', alignItems: 'center' }}>
+                        <img src={"/iconos/ingeniero.png"} alt="Ingeniero" style={{ width: '20px', height: '20px', marginRight: '5px' }} />
+                            <span>Isaac Pérez Arce - Ingeniero</span>
+                        </Typography>
+
+                        <Typography variant="subtitle2" style={{ display: 'flex', alignItems: 'center' }}>
+                                    <img src={"/iconos/gmail.png"} alt="Correo" style={{ width: '20px', height: '20px', marginRight: '5px' }} />
+                                    <span><a href="mailto:lperez@mjconcretos.com">lperez@mjconcretos.com</a></span>
+                        </Typography>
+
+                        <Typography variant="subtitle2" style={{ display: 'flex', alignItems: 'center' }}>
+                            <img src={"/iconos/whatsapp.png"} alt="Teléfono" style={{ width: '20px', height: '20px', marginRight: '5px' }} />
+                            <span><a href="https://wa.me/62447192">62447192</a></span>
+                        </Typography>
+                    </CardContent>
+                </Card>
+            </Grid>
+
 
                     <Grid item xs={12} md={6}>
                         <MyCarousel />
