@@ -1,38 +1,46 @@
 .swiper-container {
-  width: 80%; /* Ajusta el ancho del contenedor */
+  width: 80%;
   margin: 0 auto;
 }
 
 .swiper-slide {
-  width: auto; /* Ajusta el tamaño del slide */
+  width: auto;
 }
 
 .swiper-slide-image {
-  max-width: 100%; /* Evita que las imágenes se recorten */
-  height: auto; /* Mantiene la relación de aspecto */
-  border: 5px solid #ebe9e9; /* Agrega un borde alrededor de las imágenes */
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #ebe9e9;
 }
 
-.swiper-container {
-  margin: 0 auto; /* Centra el carrusel horizontalmente */
-  max-width: 800px; /* Establece el ancho máximo del carrusel */
+.swiper-pagination {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
 }
 
-
-/* Estilos base del carrusel */
-.swiper-container {
-  margin: 0 auto; /* Centra el carrusel horizontalmente */
-  max-width: 800px; /* Establece el ancho máximo del carrusel */
+.dialog-title {
+  text-align: center;
 }
 
-/* Estilos para dispositivos de pantalla pequeña */
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (max-width: 768px) {
   .swiper-container {
-    width: 90%; /* Reducir el ancho del carrusel para dispositivos pequeños */
+    width: 100%;
+    max-width: none;
   }
 
   .swiper-slide {
-    width: 70%; /* Reducir el tamaño de las diapositivas para dispositivos pequeños */
+    width: 70%;
   }
 }
 
+.swiper-container {
+  overflow-x: hidden;
+}

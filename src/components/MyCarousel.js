@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
+import { Typography, Dialog, DialogTitle, DialogContent, Button } from '@material-ui/core';
 import '../css/MyCarousel.css';
-import { Typography, Dialog, DialogTitle, DialogContent, Button } from '@material-ui/core'; // Importa los componentes necesarios
 
 const MyCarousel = () => {
   const swiperRef = useRef(null);
@@ -12,10 +12,10 @@ const MyCarousel = () => {
   useEffect(() => {
     swiperRef.current = new Swiper('.swiper-container', {
       loop: true,
-      slidesPerView: 'auto', // Ahora el número de diapositivas por vista será automático
-      spaceBetween: 30,
+      slidesPerView: 'auto',
+      spaceBetween: 10,
       centeredSlides: true,
-      grabCursor: true,
+      grabCursor: false,
       effect: 'coverflow',
       coverflowEffect: {
         rotate: 50,
@@ -29,23 +29,26 @@ const MyCarousel = () => {
         clickable: true,
       },
       loopAdditionalSlides: 3,
-      loopedSlides: 7,
-      // Configuración para que el carrusel se adapte al redimensionar la ventana
+      loopedSlides: 5,
+      touchMoveStopPropagation: false,
+      touchStartPreventDefault: false,
+      preventClicks: false,
       breakpoints: {
-        // Cuando el ancho de la ventana sea menor o igual a 768px
         768: {
-          slidesPerView: 3, // Mostrar 3 diapositivas por vista
-          spaceBetween: 30, // Espacio entre las diapositivas
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
         },
       },
     });
 
-    // Iniciar temporizador para avanzar las diapositivas automáticamente
     const interval = setInterval(() => {
       swiperRef.current.slideNext();
     }, 3000);
 
-    // Detener el temporizador al salir del componente
     return () => clearInterval(interval);
   }, []);
 
@@ -88,7 +91,6 @@ const MyCarousel = () => {
       </div>
       <div className="swiper-pagination"></div>
 
-      {/* Diálogo para mostrar la imagen en grande */}
       <Dialog open={openImageDialog} onClose={handleCloseImageDialog}>
         <DialogTitle>Imagen en Grande</DialogTitle>
         <DialogContent>
@@ -96,8 +98,6 @@ const MyCarousel = () => {
           <Button onClick={handleCloseImageDialog} variant="contained" color="secondary" style={{ marginLeft: 'auto', marginTop: '10px' }}>
             Cerrar
           </Button>
-
-
         </DialogContent>
       </Dialog>
     </div>
