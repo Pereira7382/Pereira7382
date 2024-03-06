@@ -1,6 +1,38 @@
-/* MyCarousel.css */
-.slick-slide img {
-    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
-    height: auto; /* Ajusta la altura automáticamente para mantener las proporciones */
+.swiper-container {
+  width: 80%; /* Ajusta el ancho del contenedor */
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  width: auto; /* Ajusta el tamaño del slide */
+}
+
+.swiper-slide-image {
+  max-width: 100%; /* Evita que las imágenes se recorten */
+  height: auto; /* Mantiene la relación de aspecto */
+  border: 5px solid #ebe9e9; /* Agrega un borde alrededor de las imágenes */
+}
+
+.swiper-container {
+  margin: 0 auto; /* Centra el carrusel horizontalmente */
+  max-width: 800px; /* Establece el ancho máximo del carrusel */
+}
+
+
+/* Estilos base del carrusel */
+.swiper-container {
+  margin: 0 auto; /* Centra el carrusel horizontalmente */
+  max-width: 800px; /* Establece el ancho máximo del carrusel */
+}
+
+/* Estilos para dispositivos de pantalla pequeña */
+@media screen and (max-width: 768px) {
+  .swiper-container {
+    width: 90%; /* Reducir el ancho del carrusel para dispositivos pequeños */
   }
-  
+
+  .swiper-slide {
+    width: 70%; /* Reducir el tamaño de las diapositivas para dispositivos pequeños */
+  }
+}
+
